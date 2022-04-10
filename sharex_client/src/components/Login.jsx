@@ -27,7 +27,6 @@ const Login = () => {
             <div className=" relative w-full h-full">
                 <video
                     src={shareVideo}
-                    type="video/mp4"
                     loop
                     controls={false}
                     muted

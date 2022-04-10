@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { RiHomeFill } from "react-icons/ri";
 import { IoIosArrowForward } from "react-icons/io";
-import logo from "../assets/logo.png";
 import { categories } from "../utils/data";
 
 const isNotActiveStyle =
@@ -23,7 +22,12 @@ const Sidebar = ({ closeToggle, user }) => {
                     className="flex px-5 gap-2 my-6 pt-1 w-190 items-center"
                     onClick={handleCloseSidebar}
                 >
-                    <img src={logo} alt="logo" className="w-full" />
+                    <img
+                        src="https://res.cloudinary.com/mehedi08h/image/upload/v1649603972/icons8-jar-62_q9bjoy.png"
+                        alt="logo"
+                        className="w-20"
+                    />
+                    <h3 className="font-bold">Share Memories</h3>
                 </Link>
                 <div className="flex flex-col gap-5">
                     <NavLink
@@ -53,6 +57,7 @@ const Sidebar = ({ closeToggle, user }) => {
                                 <img
                                     src={category.image}
                                     className="w-8 h-8 rounded-full shadow-sm"
+                                    alt=""
                                 />
                                 {category.name}
                             </NavLink>
